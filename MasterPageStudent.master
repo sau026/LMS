@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageStudent.master.cs" Inherits="MasterPageStudent" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            height: 932px;
+        }
+        .style1
+        {
+            width: 900px;
+            height: 556px;
+        }
+        .style3
+        {
+            height: 170px;
+        }
+        .style7
+        {
+            height: 66px;
+        }
+        .style8
+        {
+            height: 59px;
+        }
+        .style9
+        {
+            width: 100%;
+            color: #FFFFFF;
+        }
+        .style11
+        {
+            width: 100%;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .style12
+        {
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 914px">
+        
+        <table align="center" class="style1">
+            <tr>
+                <td class="style7" 
+                    style="background-image: url('/Lms final/Image/banner2.jpg')">
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" valign="top">
+                    <table class="style9">
+                        <tr> 
+                            <td style="background-color: #0000FF; color: #000000;" class="style12">
+                                <span class="style24">&nbsp;</span>&nbsp;&nbsp; 
+                                <a class="style11" 
+                                    href="AdminPage.aspx">
+                                <strong style="font-size: large; color: #000000;">Home</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </strong> 
+                                <a class="style11" href="AddBook.aspx">
+                                <strong style="font-size: large; color: #000000;">Search Book</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> 
+                                <a class="style11" href="BookManager.aspx">
+                                <strong style="font-size: large; color: #000000;">Issue Book Details</strong></a><span class="style19"><strong>&nbsp;&nbsp;&nbsp; </strong> <a class="style9" href="IssueBook.aspx">
+                              
+                                <asp:Button ID="Button1" runat="server" BorderStyle="None" CssClass="style14" 
+                                    Font-Size="Large" 
+                                    style="text-align: center; z-index: 1; left: 244px; top: 2px; position: relative; width: 97px; height: 24px; font-weight: 700; font-size: medium; font-family: 'Times New Roman', Times, serif; background-color: #66CCFF" 
+                                    Text="Logout" CausesValidation="False" onclick="Button1_Click" />
+                                </span>
+                                <a class="style9" href="IssueBook.aspx">
+                              
+                                </span>
+                                <asp:Label ID="Label1" runat="server" Font-Underline="False" 
+                                    style="z-index: 1; left: 851px; top: 152px; position: absolute; width: 118px; color: #000000; font-weight: 700; background-color: #FFFF99" 
+                                    Text="Label"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style8" 
+                    style="background-image: url('/Lms final/Image/down banner.jpg')">
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
